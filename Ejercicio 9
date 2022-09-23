@@ -1,0 +1,35 @@
+public class Main {
+    public static void main(String[] args) {
+
+        //instanciar
+        Cliente cliente= new Cliente();
+        cliente.edad=32;
+        cliente.telefono=32123321;
+        cliente.nombre= "olf";
+        cliente.credito=122300303;
+
+        System.out.println(cliente.edad);
+        System.out.println(cliente.telefono);
+        System.out.println(cliente.nombre);
+        System.out.println(cliente.credito);
+
+
+    }
+}
+
+class Persona{
+    int edad;
+    int telefono;
+    String nombre;
+
+}
+
+class Cliente extends Persona{
+    int credito;
+
+}
+
+class Trabajador extends Persona{
+    int salario;
+
+}
